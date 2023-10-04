@@ -10,40 +10,57 @@
     <link href="index.css" rel="stylesheet" />
     <title>Document</title>
   </head>
+
   <body>
     <div class="container">
       <header>
-        <div class="chat_area">
-          <div class="chat_left">
+        <div class="header_wrapper">
+          <div class="header_title">
             <span><i class="fa-solid fa-earth-asia"></i></span>
             <span>Asian cup</span>
             <span>300,000명 방문</span>
           </div>
-          <div class="chat_right"><i class="fa-solid fa-bars"></i></div>
+          <div class="drawer_menu"><i class="fa-solid fa-bars"></i></div>
         </div>
       </header>
-      <section class="main_wrap">
-        <div class="chat_popularTalk">
-          <div><i class="fa-solid fa-plus"></i>인기Talk</div>
+
+      <div class="chat_wrapper">
+        <div class="popular_area">
+          <div><i class="fa-solid fa-plus"></i>인기 Talk</div>
           <div><i class="fa-solid fa-arrow-down"></i></div>
         </div>
-        <div class="main_room">asdasd</div>
-      </section>
-      <section class="text_area">
-        <div>
-          <img src="images/avatars/image-maxblagun.png" />
-          <input type="text" placeholder="영재(으)로 메시지 작성" />
-        </div>
-      </section>
-      <footer>
-        <div class="footer_wrap">
-          <div class="footer_icon">
-            <div><i class="fa-regular fa-face-smile"></i></div>
-            <div><i class="fa-regular fa-image"></i></div>
+        <div class="chat_area">
+          <div class="chat">
+            <div>Hello World</div>
           </div>
-          <div class="footer_btn"><button>보내기</button></div>
+          <div class="chat">
+            <div>Hello World</div>
+          </div>
+          <div class="chat">
+            <div>Hello World</div>
+          </div>
         </div>
-      </footer>
+
+        <div class="submit_warpper">
+          <div class="text_area">
+            <div class="profile">
+              <img src="images/avatars/image-maxblagun.png" />
+              <input
+                type="text"
+                placeholder="영재(으)로 메시지 작성"
+                id="chat_MessageInput"
+              />
+            </div>
+          </div>
+          <div class="button_area">
+            <div class="button_icons">
+              <div><i class="fa-regular fa-face-smile"></i></div>
+              <div><i class="fa-regular fa-image"></i></div>
+            </div>
+            <div class="submit_btn"><button>보내기</button></div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>
