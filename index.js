@@ -1,8 +1,8 @@
-const footerbtn = document.querySelector(".footer_btn");
+const submitbtn = document.querySelector(".submit_btn");
 const chatMessageInput = document.getElementById("chat_MessageInput");
 let chatlist = [];
 
-footerbtn.addEventListener("click", handleButtonClick);
+submitbtn.addEventListener("click", handleButtonClick);
 
 function handleButtonClick() {
   let inputresult = chatMessageInput.value;
@@ -14,11 +14,10 @@ function handleButtonClick() {
 function render() {
   let resultHTML = "";
   for (let i = 0; i < chatlist.length; i++) {
-    resultHTML += `<div class="chat_room">
-    <div class="chat_task">
-      <div>${chatlist[i]}</div>
-    </div>
-  </div>`;
+    resultHTML =
+      `<div class="chat">
+            ${chatlist[i]}
+          </div>` + resultHTML;
   }
-  document.querySelector(".chat_border").innerHTML = resultHTML;
+  document.querySelector(".chat_area").innerHTML = resultHTML;
 }

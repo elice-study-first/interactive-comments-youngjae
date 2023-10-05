@@ -46,7 +46,7 @@ header {
 .chat_wrapper {
   width: 50%;
   height: calc(100vh - 60px);
-  position: relative;
+
   margin: 0 auto;
 }
 
@@ -73,27 +73,27 @@ header {
 .chat_area {
   width: 100%;
   height: calc(100vh - 191px);
-  overflow: scroll;
+  overflow-y: scroll;
 
   display: flex;
-  justify-content: flex-end;
-  align-items: end;
-  flex-direction: column;
+
+  flex-direction: column-reverse;
 
   background-color: #ffffff;
+  border: 1px solid red;
+}
+
+.chat_area::-webkit-scrollbar {
+  display: none;
 }
 
 .chat {
   width: fit-content;
-  height: fit-content;
+
   background-color: #e5e6e4;
   border-radius: 8px;
   padding: 10px;
   margin: 16px 10px 0 0;
-}
-
-.chat:last-child {
-  margin-bottom: 16px;
 }
 
 /* ========= */
@@ -178,75 +178,13 @@ header {
 /* == media queries */
 
 @media (max-width: 480px) {
-  .text_area div img {
-    display: none; /* 올바른 값은 "none"입니다. */
+  .profile img {
+    display: none;
   }
   .button_icons {
     display: none;
   }
   .submit_btn {
     margin: 0 auto;
-  }
-}
-
-@media (max-height: 710px) {
-  .chat_room {
-    width: 50%;
-    height: 450px;
-  }
-}
-
-@media (max-height: 650px) {
-  .chat_room {
-    width: 50%;
-    height: 400px;
-  }
-}
-
-@media (max-height: 600px) {
-  .chat_room {
-    width: 50%;
-    height: 350px;
-  }
-}
-
-@media (max-height: 550px) {
-  .chat_room {
-    width: 50%;
-    height: 300px;
-  }
-}
-
-@media (max-height: 500px) {
-  .chat_room {
-    width: 50%;
-    height: 250px;
-  }
-}
-
-@media (max-height: 450px) {
-  .chat_room {
-    width: 50%;
-    height: 200px;
-  }
-}
-@media (max-height: 400px) {
-  .chat_room {
-    width: 50%;
-    height: 150px;
-  }
-}
-
-@media (max-height: 350px) {
-  .chat_room {
-    width: 50%;
-    height: 100px;
-  }
-}
-
-@media (max-height: 300px) {
-  .chat_room {
-    width: 50%;
-    height: 50px;
   }
 }
