@@ -32,9 +32,9 @@ header {
 }
 
 .header_wrapper .header_title span:last-child {
-  display: block;
-
   font-size: 12px;
+
+  display: block;
 }
 
 .drawer_menu i {
@@ -46,22 +46,19 @@ header {
 .chat_wrapper {
   width: 50%;
   height: calc(100vh - 60px);
-
   margin: 0 auto;
 }
 
 .popular_area {
+  width: 100%;
+  height: 48px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 18px;
+  padding: 0 12px 0 12px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  width: 100%;
-  height: 48px;
-
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  font-size: 18px;
-
-  padding: 0 12px 0 12px;
 }
 
 .popular_area .fa-plus {
@@ -73,14 +70,12 @@ header {
 .chat_area {
   width: 100%;
   height: calc(100vh - 191px);
+  padding: 10px;
+
   overflow-y: scroll;
-
   display: flex;
-
   flex-direction: column-reverse;
-
   background-color: #ffffff;
-  border: 1px solid red;
 }
 
 .chat_area::-webkit-scrollbar {
@@ -89,62 +84,54 @@ header {
 
 .chat {
   width: fit-content;
-
-  background-color: #e5e6e4;
   border-radius: 8px;
   padding: 10px;
   margin: 16px 10px 0 0;
+
+  background-color: #e5e6e4;
 }
 
 /* ========= */
 
 .submit_warpper {
-  width: 100%;
 }
 
 .text_area {
-  width: inherit;
-  height: 48px;
-
-  border-top: 1px solid rgba(128, 128, 128, 0.404);
-}
-
-.profile {
   width: 100%;
   height: 48px;
+  border-top: 1px solid rgba(128, 128, 128, 0.404);
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: white;
+
+  padding: 10px;
 }
 
-.profile img {
+.text_area img {
   width: 30px;
   height: 30px;
-
-  margin: 0 auto;
 }
 
-.profile input {
-  width: 95%;
-  height: inherit;
+.text_area input {
+  width: 100%;
+  height: 30px;
+  margin-left: 10px;
 
   border: none;
 }
 
 /* ======= */
 .button_area {
-  width: 50%;
+  width: 100%;
   height: 36px;
-  left: 25%;
   bottom: 0;
 
-  position: fixed;
-  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
 .button_icons {
@@ -156,29 +143,28 @@ header {
 }
 
 .submit_btn button {
-  border: none;
   border-radius: 6px;
+  font-size: 18px;
+  padding: 0 24px;
+  margin-right: 10px;
   box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
     rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
 
-  font-size: 18px;
   color: #847577;
-
-  padding: 0 24px;
-  background-color: #e5e6e4;
-
+  border: none;
   cursor: pointer;
+  background-color: #e5e6e4;
 }
 
 .submit_btn button:hover {
-  background-color: #847577;
   color: #e5e6e4;
+  background-color: #847577;
 }
 
 /* == media queries */
 
 @media (max-width: 480px) {
-  .profile img {
+  .text_area img {
     display: none;
   }
   .button_icons {
